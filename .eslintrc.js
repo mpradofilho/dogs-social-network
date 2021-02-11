@@ -18,6 +18,10 @@ module.exports = {
     'react',
   ],
   rules: {
-    'react/button-has-type': 'off',
+    'react/react-in-jsx-scope': 'off',
+    'react/jsx-one-expression-per-line': 'off',
+    'react/jsx-filename-extension': [1, { extensions: ['.js', '.jsx'] }],
+    'no-underscore-dangle': 'off',
+    'import/prefer-default-export': 'off',
   },
 };
