@@ -1,18 +1,22 @@
 import React from 'react';
-import styles from './Input.module.css';
+import { Wrapper } from './styles';
 
-function Input({ label, type, name }) {
+function Input({
+  label, type, name, value, onChange, error, onBlur,
+}) {
   return (
-    <div className={styles.wrapper}>
-      <label className={styles.label} htmlFor={name}>{label}</label>
+    <Wrapper>
+      <label htmlFor={name}>{label}</label>
       <input
         type={type}
         id={name}
         name={name}
-        className={styles.input}
+        value={value}
+        onChange={onChange}
+        onBlur={onBlur}
       />
-      <p className={styles.error}>Error</p>
-    </div>
+      {error && <p className="error">{error}</p>}
+    </Wrapper>
   );
 }
 

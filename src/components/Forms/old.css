@@ -2,7 +2,7 @@
   margin-bottom: 1rem;
 }
 
-.input {
+input {
   border: 1px solid #eee;
   display: block;
   width: 100%;
@@ -13,22 +13,22 @@
   transition: 0.3s;
 }
 
-.input:focus,
-.input:hover {
+input:focus,
+input:hover {
   outline: none;
   border-color: #fb1;
   background: white;
   box-shadow: 0 0 0 3px #fea;
 }
 
-.label {
+label {
   display: block;
   font-size: 1rem;
   line-height: 1;
   padding-bottom: 0.5rem;
 }
 
-.error {
+p {
   color: #f31;
   font-size: .875rem;
   margin-top: .25rem;

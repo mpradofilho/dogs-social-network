@@ -26,5 +26,7 @@ module.exports = {
     'no-unused-vars': ['warn', { vars: 'all', args: 'after-used', ignoreRestSiblings: false }],
     'react/prop-types': 'off',
     'react/jsx-props-no-spreading': 'off',
+    'linebreak-style': 0,
+    'no-unused-expressions': 'off',
   },
 };
