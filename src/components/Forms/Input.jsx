@@ -3,15 +3,16 @@ import styles from './Input.module.css';
 
 function Input({ label, type, name }) {
   return (
-    <>
-      <label htmlFor={name}>{label}</label>
+    <div className={styles.wrapper}>
+      <label className={styles.label} htmlFor={name}>{label}</label>
       <input
         type={type}
         id={name}
         name={name}
         className={styles.input}
       />
-    </>
+      <p className={styles.error}>Error</p>
+    </div>
   );
 }
 

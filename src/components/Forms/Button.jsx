@@ -1,10 +1,10 @@
+/* eslint-disable react/button-has-type */
 import React from 'react';
-// eslint-disable-next-line no-unused-vars
 import styles from './Button.module.css';
 
-function Button() {
+function Button({ children, ...props }) {
   return (
-    <div />
+    <button {...props} className={styles.button}>{children}</button>
   );
 }
 
