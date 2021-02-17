@@ -1,10 +1,12 @@
 /* eslint-disable react/button-has-type */
 import React from 'react';
-import styles from './Button.module.css';
+import { Wrapper } from './styles';
 
 function Button({ children, ...props }) {
   return (
-    <button {...props} className={styles.button}>{children}</button>
+    <Wrapper>
+      <button {...props}>{children}</button>
+    </Wrapper>
   );
 }
 
