@@ -1,4 +1,5 @@
 import React from 'react';
+import { Error } from '../Helper/styles';
 import { Wrapper } from './styles';
 
 function Input({
@@ -15,7 +16,7 @@ function Input({
         onChange={onChange}
         onBlur={onBlur}
       />
-      {error && <p className="error">{error}</p>}
+      {error && <Error>{error}</Error>}
     </Wrapper>
   );
 }

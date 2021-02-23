@@ -29,11 +29,6 @@ label {
   padding-bottom: 0.5rem;
 }
 
-.error {
-  color: #f31;
-  font-size: .875rem;
-  margin-top: .25rem;
-}
 
 button {
   font-size: 1rem;
