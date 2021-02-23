@@ -21,11 +21,8 @@ module.exports = {
     'react/react-in-jsx-scope': 'off',
     'react/jsx-one-expression-per-line': 'off',
     'react/jsx-filename-extension': [1, { extensions: ['.js', '.jsx'] }],
-    'no-underscore-dangle': 'off',
     'import/prefer-default-export': 'off',
-    'react/prop-types': 'off',
-    'react/jsx-props-no-spreading': 'off',
     'linebreak-style': 0,
-    'no-unused-expressions': 'off',
+    'react/jsx-props-no-spreading': 'off',
   },
 };

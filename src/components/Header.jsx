@@ -4,9 +4,8 @@ import styles from './Header.module.css';
 import { ReactComponent as Dogs } from '../Assets/dogs.svg';
 import { UserContext } from '../UserContext';
 
-
 const Header = () => {
-  const {data} = React.useContext(UserContext);
+  const { data } = React.useContext(UserContext);
 
   return (
     <header className={styles.header}>
@@ -26,6 +25,6 @@ const Header = () => {
       </nav>
     </header>
   );
-}
+};
 
 export default Header;
