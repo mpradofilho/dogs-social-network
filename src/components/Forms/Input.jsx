@@ -1,5 +1,5 @@
 import React from 'react';
-import { Error } from '../Helper/styles';
+import Error from '../Helper';
 import { Wrapper } from './styles';
 
 function Input({
