@@ -26,5 +26,6 @@ module.exports = {
     'react/jsx-props-no-spreading': 'off',
     'react/prop-types': 'off',
     'func-names': 'off',
+    'no-undef': 'off',
   },
 };
