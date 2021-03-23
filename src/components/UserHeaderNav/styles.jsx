@@ -60,6 +60,23 @@ export const Nav = styled.nav`
       padding: 0.5rem 0;
       cursor: pointer;
     }
+
+    a.active {
+    box-shadow: none;
+    }
+
+    a:hover svg > *,
+    button:hover svg > * {
+      fill: #fb1;
+    }
+
+    button {
+      border-bottom: none;
+    }
+
+    svg {
+      margin-right: 0.5rem;
+    }
   `}
 
   ${(props) => props.mobileActive && css`
@@ -68,24 +85,9 @@ export const Nav = styled.nav`
     opacity: 1;
     pointer-events: initial;
     z-index: 100;
+
+
   `}
-`;
-
-export const MobileContainer = styled.div`
-  .activeMobile {
-    outline: none;
-    background: white;
-    box-shadow: 0 0 0 3px #fea;
-    border-color: #fb1;
-    color: #fb1;
-  }
-
-  .activeMobile::after {
-    transform: rotate(90deg);
-    width: 4px;
-    height: 4px;
-    box-shadow: 0 8px currentColor, 0 -8px currentColor;
-  }
 `;
 
 export const Mobile = styled.button`
@@ -120,4 +122,19 @@ export const Mobile = styled.button`
     box-shadow: 0 6px currentColor, 0 -6px currentColor;
     transition: 0.2s;
   }
+
+  ${(props) => props.mobileActive && css`
+    outline: none;
+    background: white;
+    box-shadow: 0 0 0 3px #fea;
+    border-color: #fb1;
+    color: #fb1;
+
+    &::after {
+    transform: rotate(-90deg);
+    width: 4px;
+    height: 4px;
+    box-shadow: 0 8px currentColor, 0 -8px currentColor;
+  }
+  `}
 `;

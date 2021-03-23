@@ -3,7 +3,7 @@ import React, { useContext, useState } from 'react';
 import useMedia from '../../Hooks/useMedia';
 
 import { UserContext } from '../../UserContext';
-import { Mobile, Nav, MobileContainer } from './styles';
+import { Mobile, Nav } from './styles';
 
 import { ReactComponent as FeedIcon } from '../../Assets/feed.svg';
 import { ReactComponent as StatsIcon } from '../../Assets/estatisticas.svg';
@@ -18,14 +18,13 @@ export default function UserHeaderNav() {
   return (
     <>
       {mobile && (
-      <MobileContainer>
         <Mobile
           aria-label="Menu"
           onClick={() => setMobileMenu(!mobileMenu)}
           // activeClassName="activeMobile"
-          className={mobileMenu && 'activeMobile'}
+          // className={mobileMenu && 'activeMobile'}
+          mobileActive={mobileMenu && true}
         />
-      </MobileContainer>
       )}
       <Nav
         isMobile={mobile && true}
